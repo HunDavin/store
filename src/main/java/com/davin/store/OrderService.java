@@ -1,8 +1,13 @@
 package com.davin.store;
 
 public class OrderService {
+    private PaymentService paymentService;
+
+
+    public OrderService(PaymentService paymentService){
+        this.paymentService = paymentService;
+    }
     public void placeOrder(){
-        var paymenService = new stripePaymentService();
-        paymenService.processPayment(15);
+        paymentService.processPayment(20);
     }
 }
