@@ -1,15 +1,16 @@
 package com.davin.store;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class StoreApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(StoreApplication.class, args);
-		var OrderService = new OrderService(new PaypalPaymentService());
-		// OrderService.setPaymentService(new PaypalPaymentService());
-		OrderService.placeOrder();
+		SpringApplication.run(StoreApplication.class, args);
+		// var OrderService = new OrderService(new PaypalPaymentService());
+		// // OrderService.setPaymentService(new PaypalPaymentService());
+		// OrderService.placeOrder();
 
 	}
 
