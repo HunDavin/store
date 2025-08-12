@@ -6,7 +6,10 @@ import org.springframework.stereotype.Service;
 public class OrderService {
     private PaymentService paymentService;
 
-
+    // @Autowired
+    /*AutoWired it needed when class has another default constructor 
+     * or has another different constructor
+     */
     public OrderService(PaymentService paymentService){
         this.paymentService = paymentService;
     }
