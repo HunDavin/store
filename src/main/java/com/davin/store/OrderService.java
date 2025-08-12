@@ -1,5 +1,8 @@
 package com.davin.store;
 
+import org.springframework.stereotype.Service;
+
+@Service //annotation for bean of IOC
 public class OrderService {
     private PaymentService paymentService;
 
